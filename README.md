@@ -11,3 +11,5 @@ Scripts used during the development of PlasFlow
 - Run "RScript generate_fragments_for_training.R"
 
   - May require large amounts of RAM
+
+- Run training using `PlasFlow_train.py` script - requires TensorFlow 0.10.0 (see [requirements for PlasFlow](https://github.com/smaegol/PlasFlow#requirements))
