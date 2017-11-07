@@ -98,7 +98,14 @@ for (taxon_id in taxon_ids) {
     }
 }
 
+refseq_taxonomy$tax_id<-rownames(refseq_taxonomy)
+
+taxonomy<-merge(annotation_refseq_filtered,refseq_taxonomy,by.x="tax_id",by.y="tax_id",all=T)
 
 # write annotation data to file:
 write.table(refseq_taxonomy, file = "refseq_annotation.tsv", sep = "\t", col.names = T,
     quote = T, row.names = F)
+
+    # write annotation data to file:
+    write.table(taxonomy, file = "refseq_annotation2.tsv", sep = "\t", col.names = T,
+        quote = T, row.names = F)
