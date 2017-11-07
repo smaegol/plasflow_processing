@@ -4,8 +4,7 @@ Scripts used during the development of PlasFlow.
 
 All preprocessing steps producing kmer counts used for the neural network training can be run using command:
 
-  ```
-  bash PlasFlow_preprocessing.sh```
+  ```bash PlasFlow_preprocessing.sh```
 
   Alternatively, all steps can be ran individually:
 
