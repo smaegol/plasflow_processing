@@ -4,7 +4,8 @@ Scripts used during the development of PlasFlow.
 
 All preprocessing steps producing kmer counts used for the neural network training can be run using command:
 
-  ```bash PlasFlow_preprocessing.sh```
+  ```
+  bash PlasFlow_preprocessing.sh```
 
   Alternatively, all steps can be ran individually:
 
@@ -23,6 +24,5 @@ All preprocessing steps producing kmer counts used for the neural network traini
   - Typical invocation of a script:
 
   ```
-  python PlasFlow_train.py --input kmern_split_raw_counts_tax_classes_numeric_annotated_filtered_tax.tsv --hidden1 20 --hidden2 10 --activation relu --modeldir kmern_split_20_10_neurons_relu --steps 50000
-```
+  python PlasFlow_train.py --input kmern_split_raw_counts_tax_classes_numeric_annotated_filtered_tax.tsv --hidden1 20 --hidden2 10 --activation relu --modeldir kmern_split_20_10_neurons_relu --steps 50000```
     will run training on specified file, using 20 neurons in first hidden layer and 10 neurons in second hidden layer, using `relu` activation function and 50000 steps of training. Model will be saved in the `kmern_split_20_10_neurons_relu` folder
