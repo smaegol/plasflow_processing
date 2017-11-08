@@ -1,6 +1,6 @@
 # plasflow_processing
 
-Scripts used during the development of PlasFlow.
+Scripts used during the development of [PlasFlow](https://github.com/smaegol/PlasFlow).
 
 All preprocessing steps producing kmer counts used for the neural network training can be run using command:
 
